@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+	min-height: 100vh;
+
+}
+
+.navbar {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        justify-content: space-between;
+        padding-bottom: 0;
+        /*background-color:#439c77;*/
+        /*height: 70px;*/
+        height: 12vh;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: white;
+        align-items: center;
+        border-bottom: solid black;
+        color: white;
+        top: 0;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+        list-style-type: none;
+
+    }
+
+    .nav-links {
+        margin-left:40px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .logo {
+        margin-top: 0;
+        height: 60px;
+        width: 60px;
+       	margin-left:20px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        color: white;
+        align-items: center;
+        border-radius: 100%;
+        background-color:#439c77;
+    }
+
+    .navbar-toggle {
+       display: none
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        font-size: 20px;
+        background-color: black;
+        color: white;
+    }
+
+
+a{
+	text-decoration: none;
+	font-size: 20px;
+}
+    
+ 
+.body-Part{
+	margin-top:70px;
+	min-height:100vh;
+	display: flex;
+}
+
+
+.body-left-part{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("../assets/er.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.body-right-part{
+
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+}
+
+.inner-part{
+	margin-top: 10px;
+	font-size: 30px;
+	color: white;
+	font-weight: bolder;
+	font-family: 'Quattrocento Sans', sans-serif;
+}
+
+p{
+	font-size: 25px;
+}
+
+
+.footer {
+   position: scroll;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 100%;
+   background-color: #439c77;
+   color: white;
+   height: 12vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-top: solid black;
+}
+
+
