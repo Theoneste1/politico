@@ -2,6 +2,9 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body{
@@ -12,6 +15,7 @@ body{
 .navbar {
         display: flex;
         position: fixed;
+        z-index: 1000;
         width: 100%;
         justify-content: space-between;
         padding-bottom: 0;
@@ -21,9 +25,8 @@ body{
         padding-bottom: 10px;
         padding-top: 20px;
         padding-bottom: 20px;
-        background-color: white;
+        background-color: #21098f;
         align-items: center;
-        border-bottom: solid black;
         color: white;
         top: 0;
     }
@@ -34,17 +37,22 @@ body{
         flex-direction: row;
         justify-content: flex-end;
     }
-
-    .main-nav li {
-        margin: 0;
+    .main-nav li{
+        margin: 5px;
         list-style-type: none;
+
+    }
+    .main-nav li a{
+        margin: 5px;
+        list-style-type: none;
+
 
     }
 
     .nav-links {
         margin-left:40px;
         text-decoration: none;
-        font-size: 20px;
+        /* font-size: 20px; */
     }
 
     .logo {
@@ -52,69 +60,121 @@ body{
         height: 60px;
         width: 60px;
        	margin-left:20px;
-        font-size: 20px;
+        font-size: 15px;
+        font-family: sans-serif;
         display: flex;
+        transform: rotate(-45deg);
         justify-content: center;
-        color: white;
+        color:#21098f;
         align-items: center;
         border-radius: 100%;
-        background-color:#439c77;
+        background-color:white;
     }
 
-    .navbar-toggle {
-       display: none
-    }
 
-    .logo:hover,
-    .nav-links:hover {
-        font-size: 20px;
-        background-color: black;
-        color: white;
+  
+    li a:hover {
+        color: yellow;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+    .logo:hover{
+        transform: rotate(0deg);
+        color:white;
+        background-color:#21098f;
+        border: solid white;
     }
 
 
 a{
 	text-decoration: none;
-	font-size: 20px;
+	/* font-size: 20px; */
+}
+li a{
+    color: white;
 }
     
  
 .body-Part{
-	margin-top:70px;
+	margin-top:80px;
 	min-height:100vh;
 	display: flex;
 }
 
 
 .body-left-part{
-	width: 50%;
+    width: 50%;
+    /* it should use relative so that we can add */
+    position: relative; 
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url("../assets/er.jpg");
+	background-image: url("../assets/poli.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
+.body-left-part::before{
+    position: absolute;
+    background-color: blue;
+    content: " ";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8;
+    z-index: 0;
+    
+
+}
 .body-right-part{
 
 	width: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 500px;
 }
 
 .inner-part{
 	margin-top: 10px;
-	font-size: 30px;
+    z-index: 10;
 	color: white;
 	font-weight: bolder;
 	font-family: 'Quattrocento Sans', sans-serif;
 }
 
-p{
-	font-size: 25px;
+.inner-part p{
+    margin-top: 50px;
+    
+}
+p a{
+    color: yellow;
+}
+
+
+.body-right-part{
+    width: 50%;
+    position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("../assets/er.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 1%;
+}
+
+.body-right-part::before{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    content: " ";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8;
+
 }
 
 
@@ -124,13 +184,12 @@ p{
    left: 0;
    right: 0;
    width: 100%;
-   background-color: #439c77;
+   background-color: #21098f;
    color: white;
    height: 12vh;
    display: flex;
    align-items: center;
    justify-content: center;
-   border-top: solid black;
 }
 
 
