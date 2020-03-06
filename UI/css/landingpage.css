@@ -79,7 +79,7 @@ body{
 
     }
     .logo:hover{
-        transform: rotate(0deg);
+        transform: rotate(-45deg);
         color:white;
         background-color:#21098f;
         border: solid white;
@@ -122,7 +122,7 @@ li a{
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.8;
+    opacity: 0.3;
     z-index: 0;
     
 
@@ -148,6 +148,9 @@ p a{
     color: yellow;
 }
 
+.label{
+    color: #21098f;
+}
 
 .body-right-part{
     width: 50%;
@@ -172,7 +175,7 @@ p a{
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.8;
+    opacity: 0.3;
 
 }
 
